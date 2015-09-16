@@ -17,9 +17,10 @@ MIT license, all text above must be included in any redistribution
 #ifndef ADAFRUIT_ILI9341_H
 #define ADAFRUIT_ILI9341_H
 
-// Hack to get this to work in Spark IDE
-#include "../Adafruit_mfGFX/Adafruit_mfGFX.h"
-//#include "Adafruit_mfGFX.h"
+// Use this line if you're using the Particle web-based Build IDE:
+//#include "../Adafruit_mfGFX/Adafruit_mfGFX.h"
+// Use this line if you're building some other way (i.e. CLI):
+#include "Adafruit_mfGFX.h"
 
 #define pgm_read_byte(addr) (*(const unsigned char *)(addr))
 #define pgm_read_word(addr) (*(const unsigned short *)(addr))
