@@ -32,11 +32,6 @@ Adafruit_ILI9341::Adafruit_ILI9341(uint8_t cs, uint8_t dc, uint8_t rst) : Adafru
 	_mosi = _sclk = 0;
 }
 
-
-#if  (PLATFORM_ID) == 6
-STM32_Pin_Info* PIN_MAP = HAL_Pin_Map(); // Pointer required for highest access speed
-#endif
-
 inline void Adafruit_ILI9341::spiwrite(uint8_t c) {
 
 	//Serial.print("0x"); Serial.print(c, HEX); Serial.print(", ");
